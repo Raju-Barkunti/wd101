@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>FORM</title>
+  </head>
+<style>
+  input#name:invalid:focus{
+  border:1px solid red;
+  }
+  </style>
+<body>
+  <form id="user-form">
+   <label for="name">Name</label>
+   <input required type="text" id="name" name="name">
+<br>
+   <label for="email">Email</label>
+   <input required type="email" id="email" name="email">
+<br>
+   <label for="password">Password</label>
+   <input required type="password" id="password" name="password">
+<br>
+   <label for="dob">Date of Birth</label>
+   <input required type="date" id="dob" name="dob" value=Date()>
+   
+<br>
+   <input  type="checkbox" id="acceptTerms" name="acceptTerms">
+   <label for="acceptTerms">Accept Terms & Conditions</label>
+<br>
+   <button type="submit">Submit</button>
+</form>
+          
+  
+  <div
+  class="relative bg-white px-6 mt-5 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10">
+<div class="mx-auto">
+    <h2 class="text-3xl text-center font-bold leading-tight">Entries</h2>
+    <div class="divide-y divide-gray-300/50" id="user-entries"></div>
+</div>
+<script src="val.js"></script>
+</body>
+
+</html>
